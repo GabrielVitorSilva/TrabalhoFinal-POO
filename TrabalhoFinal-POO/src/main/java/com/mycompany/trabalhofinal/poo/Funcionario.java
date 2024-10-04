@@ -10,13 +10,29 @@ public class Funcionario extends Pessoa {
         this.cargo = cargo;
     }
 
-    public void registrarDespesa(String descricao, double valor) {
-    }
-
-    public void acessarAgenda() {
+    public void verificarEstoqueProduto(Produto produto) {
+        if (produto.verificarEstoque()) {
+            System.out.println("Produto disponível em estoque.");
+        } else {
+            System.out.println("Produto indisponível.");
+        }
     }
 
     public void gerenciarCliente(Cliente cliente) {
+        System.out.println("Gerenciando cliente: " + cliente.getNome());
+    }
+
+    public void cancelarAgendamento(Agenda agenda) {
+        agenda.cancelarAgendamento();
+        System.out.println("50% do valor do agendamento foi retido.");
+    }
+
+    public void registrarDespesaCliente(Despesa despesa) {
+        despesa.registrarDespesa();
+    }
+
+    public void gerenciarDespesasAcademia(Despesa despesa) {
+        despesa.registrarDespesa();
     }
 
     @Override

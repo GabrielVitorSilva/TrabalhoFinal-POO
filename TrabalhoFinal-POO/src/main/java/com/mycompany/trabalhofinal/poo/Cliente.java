@@ -10,24 +10,16 @@ public class Cliente extends Pessoa {
         this.saldoDevedor = 0;
     }
 
+    public void realizarAgendamento(Agenda agenda) {
+        agenda.realizarAgendamento();
+    }
+
+    public void cancelarReserva(Agenda agenda) {
+        agenda.cancelarAgendamento();
+    }
+
     public void realizarPagamento(double valor) {
         this.saldoDevedor -= valor;
-    }
-
-    public void atualizarDados(String telefone, String plano) {
-        super.setNome(telefone);
-        this.plano = plano;
-    }
-
-    public String verificarStatus() {
-        return this.saldoDevedor > 0 ? "Devedor" : "Regularizado";
-    }
-
-    public boolean confirmarReserva() {
-        return true;
-    }
-
-    public void cancelarReserva() {
     }
 
     @Override
