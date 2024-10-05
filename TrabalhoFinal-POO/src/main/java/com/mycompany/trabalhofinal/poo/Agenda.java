@@ -24,6 +24,6 @@ public class Agenda {
 
     public void cancelarAgendamento() {
         vagaDisponivel = true;
-        System.out.println("Agendamento cancelado.");
+        System.out.println("Agendamento .");
     }
 }
