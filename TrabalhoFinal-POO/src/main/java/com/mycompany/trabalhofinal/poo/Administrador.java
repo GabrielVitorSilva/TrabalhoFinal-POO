@@ -1,10 +1,10 @@
 package com.mycompany.trabalhofinal.poo;
 
-public class Administrador extends Pessoa {
+public class Administrador extends Funcionario {
     private String senha;
 
-    public Administrador(String nome, String endereco, String telefone, String email, String cpf, String senha) {
-        super(nome, endereco, telefone, email, cpf);
+    public Administrador(String nome, String endereco, String telefone, String email, String cpf, String senha, String cargo, String idFuncionario) {
+        super(nome, endereco, telefone, email, cpf, cargo , idFuncionario);
         this.senha = senha;
     }
 

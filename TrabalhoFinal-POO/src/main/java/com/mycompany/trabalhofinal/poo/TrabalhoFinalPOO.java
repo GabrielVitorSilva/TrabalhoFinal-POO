@@ -30,7 +30,11 @@ public class TrabalhoFinalPOO {
         String cpfAdmin = scanner.nextLine();
         System.out.print("Senha: ");
         String senhaAdmin = scanner.nextLine();
-        admin = new Administrador(nomeAdmin, enderecoAdmin, telefoneAdmin, emailAdmin, cpfAdmin, senhaAdmin);
+        System.out.print("cargo: ");
+        String cargoAdmin = scanner.nextLine();
+        System.out.print("Id: ");
+        String idAdmin = scanner.nextLine();
+        admin = new Administrador(nomeAdmin, enderecoAdmin, telefoneAdmin, emailAdmin, cpfAdmin, senhaAdmin, cargoAdmin, idAdmin);
 
         int opcao = -1;
 
