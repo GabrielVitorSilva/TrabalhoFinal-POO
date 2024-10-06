@@ -1,4 +1,4 @@
-package com.mycompany.trabalhofinal.poo;
+package ProjetoAcademia;
 
 public class Venda {
     private String descricao;

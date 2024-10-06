@@ -1,4 +1,4 @@
-package com.mycompany.trabalhofinal.poo;
+package ProjetoAcademia;
 
 public class Administrador extends Funcionario {
     private String senha;

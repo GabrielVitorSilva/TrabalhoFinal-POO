@@ -1,4 +1,4 @@
-package com.mycompany.trabalhofinal.poo;
+package ProjetoAcademia;
 
 import java.util.HashMap;
 import java.util.Map;

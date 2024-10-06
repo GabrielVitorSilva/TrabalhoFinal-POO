@@ -1,5 +1,5 @@
 
-package com.mycompany.trabalhofinal.poo;
+package ProjetoAcademia;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
