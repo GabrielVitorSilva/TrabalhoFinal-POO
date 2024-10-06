@@ -1,4 +1,4 @@
-package ProjetoAcademia;
+package com.mycompany.trabalhofinal.poo;
 
 public class Cliente extends Pessoa {
 

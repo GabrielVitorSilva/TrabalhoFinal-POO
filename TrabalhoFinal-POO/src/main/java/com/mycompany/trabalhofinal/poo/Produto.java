@@ -1,4 +1,4 @@
-package ProjetoAcademia;
+package com.mycompany.trabalhofinal.poo;
 
 public class Produto {
     private String nome;

@@ -1,5 +1,5 @@
 
-package ProjetoAcademia;
+package com.mycompany.trabalhofinal.poo;
 import java.time.LocalDate;
 
 

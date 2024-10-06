@@ -1,5 +1,5 @@
 
-package ProjetoAcademia;
+package com.mycompany.trabalhofinal.poo;
 
 public class SalasAcademiaStatic {
     private static final SalaAcademia SALA_MUSCULACAO = new SalaAcademia("Musculação", 25);
