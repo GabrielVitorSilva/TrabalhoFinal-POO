@@ -43,7 +43,7 @@ public class TrabalhoFinalPOO {
             System.out.println("\n=== Sistema de Gerenciamento da Academia ===");
             System.out.println("1. Menu de Cadastros");
             System.out.println("2. Menu de Agendamentos");
-            System.out.println("3. Menu de Produtos");
+            System.out.println("3. Menu de Loja");
             System.out.println("4. Menu de Relatórios");
             System.out.println("0. Sair");
             System.out.print("Escolha uma opção: ");
