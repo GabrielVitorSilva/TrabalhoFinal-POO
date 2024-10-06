@@ -1,6 +1,7 @@
 package com.mycompany.trabalhofinal.poo;
 
 public class Cliente extends Pessoa {
+
     private String plano;
     private double saldoDevedor;
 
@@ -14,8 +15,8 @@ public class Cliente extends Pessoa {
         agenda.realizarAgendamento();
     }
 
-    public void cancelarReserva(Agenda agenda) {
-        agenda.cancelarAgendamento();
+    public void cancelarReserva(Agenda agenda, double valorAgendamento, String dataAula) {
+        agenda.cancelarAgendamento(valorAgendamento, dataAula);
     }
 
     public void realizarPagamento(double valor) {

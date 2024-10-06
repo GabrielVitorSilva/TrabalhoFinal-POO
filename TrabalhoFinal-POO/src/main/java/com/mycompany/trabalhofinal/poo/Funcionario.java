@@ -1,6 +1,7 @@
 package com.mycompany.trabalhofinal.poo;
 
 public class Funcionario extends Pessoa {
+
     private String idFuncionario;
     private String cargo;
 
@@ -22,8 +23,8 @@ public class Funcionario extends Pessoa {
         System.out.println("Gerenciando cliente: " + cliente.getNome());
     }
 
-    public void cancelarAgendamento(Agenda agenda) {
-        agenda.cancelarAgendamento();
+    public void cancelarAgendamento(Agenda agenda, double valorAgendamento, String dataAula) {
+        agenda.cancelarAgendamento(valorAgendamento, dataAula);
         System.out.println("50% do valor do agendamento foi retido.");
     }
 

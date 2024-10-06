@@ -9,7 +9,8 @@ public class Venda {
         this.valor = valor;
     }
 
-    public void emitirRelatorioVenda() {
+    public void emitirRelatorioVenda(String periodo) {
+        System.out.println("Relatório de vendas para o período: " + periodo);
         System.out.println("Venda: " + descricao + " - Valor: R$ " + valor);
     }
 }

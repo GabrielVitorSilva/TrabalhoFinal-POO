@@ -22,8 +22,17 @@ public class Agenda {
         }
     }
 
-    public void cancelarAgendamento() {
+    public void cancelarAgendamento(double valorAgendamento, String dataAula) {
+        if (dataAulaMenorQueDoisDias(dataAula)) {
+            System.out.println("50% do valor do agendamento foi retido. Valor retido: R$ " + valorAgendamento * 0.5);
+        } else {
+            System.out.println("Agendamento cancelado. Valor total devolvido.");
+        }
         vagaDisponivel = true;
-        System.out.println("Agendamento .");
+    }
+
+    private boolean dataAulaMenorQueDoisDias(String dataAula) {
+        // Implementar a lógica para comparar datas
+        return true;
     }
 }
