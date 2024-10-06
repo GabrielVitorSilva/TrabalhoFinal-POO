@@ -2,7 +2,7 @@ package com.mycompany.trabalhofinal.poo;
 
 import java.util.Scanner;
 
-public class TrabalhoFinalPOO {
+public class SistemaAcademia {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
