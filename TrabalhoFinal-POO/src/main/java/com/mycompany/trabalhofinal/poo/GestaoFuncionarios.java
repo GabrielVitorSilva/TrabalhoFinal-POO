@@ -4,10 +4,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GestaoFuncionarios {
+    private static GestaoFuncionarios instanciaUnica;
     private List<Funcionario> funcionarios;
 
-    public GestaoFuncionarios() {
+    // Construtor privado para impedir instâncias externas
+    private GestaoFuncionarios() {
         this.funcionarios = new ArrayList<>();
+    }
+
+    // Método para obter a única instância da classe
+    public static synchronized GestaoFuncionarios getInstancia() {
+        if (instanciaUnica == null) {
+            instanciaUnica = new GestaoFuncionarios();
+        }
+        return instanciaUnica;
     }
 
     public void adicionarFuncionario(Funcionario funcionario) {
@@ -24,7 +34,6 @@ public class GestaoFuncionarios {
         for (Funcionario f : funcionarios) {
             if (f.getCPF().equals(funcionario.getCPF())) {
                 f.setNome(funcionario.getNome());
-                // outros atributos...
                 System.out.println("Funcionário atualizado com sucesso.");
             }
         }
